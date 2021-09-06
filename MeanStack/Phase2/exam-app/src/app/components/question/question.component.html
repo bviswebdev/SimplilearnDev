@@ -1,0 +1,62 @@
+<main>
+  <div class="container">
+    <form #questionForm="ngForm" (ngSubmit)="onSubmit(questionForm)">
+      <div class="my-5" *ngFor="let question of questions; let i = index">
+        <label [id]="question.questionLabelId" class="h3"
+          >{{ i + 1 }}) {{ question.question }}</label
+        >
+        <mat-radio-group
+          [aria-labelledby]="question.questionLabelId"
+          class="example-radio-group mb-4"
+          [name]="question.questionName"
+          [(ngModel)]="question.selectedAnswer"
+        >
+          <mat-radio-button
+            class="example-radio-button fs-4 ms-4"
+            [value]="answer.answerValue"
+            [aria-labelledby]="answer.answerId"
+            *ngFor="let answer of question.answers"
+          >
+            <label [id]="answer.answerId">
+              <span class="wrap-mat-radio-label">{{ answer.answerDesc }}</span>
+            </label>
+          </mat-radio-button>
+        </mat-radio-group>
+
+        <div
+          *ngIf="
+            formSubmitted &&
+            question.selectedAnswer === question.correctAnswerId
+          "
+          class="alert alert-success fs-4 mt-3"
+          role="alert"
+        >
+          * Selected answer is correct
+        </div>
+        <div
+          *ngIf="
+            formSubmitted &&
+            question.selectedAnswer !== question.correctAnswerId
+          "
+          class="alert alert-danger fs-4 mt-3"
+          role="alert"
+        >
+          * Selected answer is wrong
+        </div>
+      </div>
+      <button
+        type="submit"
+        [disabled]="submitBtnFlag"
+        class="btn btn-primary mb-4"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+  <app-result
+    *ngIf="formSubmitted"
+    [testResult]="examResult"
+    [passResult]="passFlag"
+    (resetQuestionForm)="resetFormData($event)"
+  ></app-result>
+</main>

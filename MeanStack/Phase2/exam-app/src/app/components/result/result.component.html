@@ -1,0 +1,26 @@
+<div class="container my-5">
+  <div class="card text-center">
+    <div class="card-header h3">Exam Results</div>
+    <div class="card-body">
+      <h5 class="card-title">
+        <div *ngIf="passFlag" class="alert alert-success fs-4" role="alert">
+          Congrats you passed the exam!
+        </div>
+        <div *ngIf="!passFlag" class="alert alert-danger fs-4" role="alert">
+          Sorry you failed the exam!
+        </div>
+      </h5>
+      <p #test class="card-text fs-3">
+        Final Score {{ examResult }}/10. You need minimum score of 7 to pass the
+        exam. Please review the answers for verification. Correct answers marked
+        in green and Wrond answers marked in red.
+      </p>
+      <button #retake class="btn btn-primary" (click)="resetForm()">
+        Retake Exam
+      </button>
+    </div>
+    <div class="card-footer text-muted fs-5">
+      Please also refresh the page if you need to retake the exam again.
+    </div>
+  </div>
+</div>

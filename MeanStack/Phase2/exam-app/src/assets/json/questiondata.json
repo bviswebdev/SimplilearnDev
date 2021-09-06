@@ -1,0 +1,292 @@
+[
+  {
+    "questionLabelId": "questionid1",
+    "question": "Grand Central Terminal, Park Avenue, New York is the world's",
+    "questionName": "question1",
+    "answers": [
+      {
+        "answerId": "q1ans1",
+        "answerValue": "1",
+        "answerDesc": "largest railway station"
+      },
+      {
+        "answerId": "q1ans2",
+        "answerValue": "2",
+        "answerDesc": "highest railway station"
+      },
+      {
+        "answerId": "q1ans3",
+        "answerValue": "3",
+        "answerDesc": "longest railway station"
+      },
+      {
+        "answerId": "q1ans4",
+        "answerValue": "4",
+        "answerDesc": "None of the above"
+      }
+    ],
+    "selectedAnswer": "",
+    "correctAnswerId": "1"
+  },
+  {
+    "questionLabelId": "questionid2",
+    "question": "Entomology is the science that studies",
+    "questionName": "question2",
+    "answers": [
+      {
+        "answerId": "q2ans1",
+        "answerValue": "1",
+        "answerDesc": "Behavior of human beings"
+      },
+      {
+        "answerId": "q2ans2",
+        "answerValue": "2",
+        "answerDesc": "Insects"
+      },
+      {
+        "answerId": "q2ans3",
+        "answerValue": "3",
+        "answerDesc": "The origin and history of technical and scientific terms"
+      },
+      {
+        "answerId": "q2ans4",
+        "answerValue": "4",
+        "answerDesc": "The formation of rocks"
+      }
+    ],
+    "selectedAnswer": "",
+    "correctAnswerId": "2"
+  },
+  {
+    "questionLabelId": "questionid3",
+    "question": "Eritrea, which became the 182nd member of the UN in 1993, is in the continent of",
+    "questionName": "question3",
+    "answers": [
+      {
+        "answerId": "q3ans1",
+        "answerValue": "1",
+        "answerDesc": "Asia"
+      },
+      {
+        "answerId": "q3ans2",
+        "answerValue": "2",
+        "answerDesc": "Africa"
+      },
+      {
+        "answerId": "q3ans3",
+        "answerValue": "3",
+        "answerDesc": "Europe"
+      },
+      {
+        "answerId": "q3ans4",
+        "answerValue": "4",
+        "answerDesc": "Australia"
+      }
+    ],
+    "selectedAnswer": "",
+    "correctAnswerId": "2"
+  },
+  {
+    "questionLabelId": "questionid4",
+    "question": "Galileo was an Italian astronomer who",
+    "questionName": "question4",
+    "answers": [
+      {
+        "answerId": "q4ans1",
+        "answerValue": "1",
+        "answerDesc": "developed the telescope"
+      },
+      {
+        "answerId": "q4ans2",
+        "answerValue": "2",
+        "answerDesc": "discovered four satellites of Jupiter"
+      },
+      {
+        "answerId": "q4ans3",
+        "answerValue": "3",
+        "answerDesc": "discovered that the movement of pendulum produces a regular time measurement"
+      },
+      {
+        "answerId": "q4ans4",
+        "answerValue": "4",
+        "answerDesc": "All of the above"
+      }
+    ],
+    "selectedAnswer": "",
+    "correctAnswerId": "4"
+  },
+  {
+    "questionLabelId": "questionid5",
+    "question": "Exposure to sunlight helps a person improve his health because",
+    "questionName": "question5",
+    "answers": [
+      {
+        "answerId": "q5ans1",
+        "answerValue": "1",
+        "answerDesc": "the infrared light kills bacteria in the body"
+      },
+      {
+        "answerId": "q5ans2",
+        "answerValue": "2",
+        "answerDesc": "resistance power increases"
+      },
+      {
+        "answerId": "q5ans3",
+        "answerValue": "3",
+        "answerDesc": "the pigment cells in the skin get stimulated and produce a healthy tan"
+      },
+      {
+        "answerId": "q5ans4",
+        "answerValue": "4",
+        "answerDesc": "the ultraviolet rays convert skin oil into Vitamin D"
+      }
+    ],
+    "selectedAnswer": "",
+    "correctAnswerId": "4"
+  },
+  {
+    "questionLabelId": "questionid6",
+    "question": "The ozone layer restricts",
+    "questionName": "question6",
+    "answers": [
+      {
+        "answerId": "q6ans1",
+        "answerValue": "1",
+        "answerDesc": "Visible light"
+      },
+      {
+        "answerId": "q6ans2",
+        "answerValue": "2",
+        "answerDesc": "Infrared radiation"
+      },
+      {
+        "answerId": "q6ans3",
+        "answerValue": "3",
+        "answerDesc": "X-rays and gamma rays"
+      },
+      {
+        "answerId": "q6ans4",
+        "answerValue": "4",
+        "answerDesc": "Ultraviolet radiation"
+      }
+    ],
+    "selectedAnswer": "",
+    "correctAnswerId": "4"
+  },
+  {
+    "questionLabelId": "questionid7",
+    "question": "For seeing objects at the surface of water from a submarine under water, the instrument used is",
+    "questionName": "question7",
+    "answers": [
+      {
+        "answerId": "q7ans1",
+        "answerValue": "1",
+        "answerDesc": "kaleidoscope"
+      },
+      {
+        "answerId": "q7ans2",
+        "answerValue": "2",
+        "answerDesc": "periscope"
+      },
+      {
+        "answerId": "q7ans3",
+        "answerValue": "3",
+        "answerDesc": "spectroscope"
+      },
+      {
+        "answerId": "q7ans4",
+        "answerValue": "4",
+        "answerDesc": "telescope"
+      }
+    ],
+    "selectedAnswer": "",
+    "correctAnswerId": "2"
+  },
+  {
+    "questionLabelId": "questionid8",
+    "question": "Fathometer is used to measure",
+    "questionName": "question8",
+    "answers": [
+      {
+        "answerId": "q8ans1",
+        "answerValue": "1",
+        "answerDesc": "Earthquakes"
+      },
+      {
+        "answerId": "q8ans2",
+        "answerValue": "2",
+        "answerDesc": "Rainfall"
+      },
+      {
+        "answerId": "q8ans3",
+        "answerValue": "3",
+        "answerDesc": "Ocean depth"
+      },
+      {
+        "answerId": "q8ans4",
+        "answerValue": "4",
+        "answerDesc": "Sound intensity"
+      }
+    ],
+    "selectedAnswer": "",
+    "correctAnswerId": "3"
+  },
+  {
+    "questionLabelId": "questionid9",
+    "question": "For purifying drinking water alum is used",
+    "questionName": "question9",
+    "answers": [
+      {
+        "answerId": "q9ans1",
+        "answerValue": "1",
+        "answerDesc": "for coagulation of mud particles"
+      },
+      {
+        "answerId": "q9ans2",
+        "answerValue": "2",
+        "answerDesc": "to kill bacteria"
+      },
+      {
+        "answerId": "q9ans3",
+        "answerValue": "3",
+        "answerDesc": "to remove salts"
+      },
+      {
+        "answerId": "q9ans4",
+        "answerValue": "4",
+        "answerDesc": "to remove gases"
+      }
+    ],
+    "selectedAnswer": "",
+    "correctAnswerId": "1"
+  },
+  {
+    "questionLabelId": "questionid10",
+    "question": "Excessive secretion from the pituitary gland in the children results in",
+    "questionName": "question10",
+    "answers": [
+      {
+        "answerId": "q10ans1",
+        "answerValue": "1",
+        "answerDesc": "increased height"
+      },
+      {
+        "answerId": "q10ans2",
+        "answerValue": "2",
+        "answerDesc": "retarded growth"
+      },
+      {
+        "answerId": "q10ans3",
+        "answerValue": "3",
+        "answerDesc": "weakening of bones"
+      },
+      {
+        "answerId": "q10ans4",
+        "answerValue": "4",
+        "answerDesc": "None of the above"
+      }
+    ],
+    "selectedAnswer": "",
+    "correctAnswerId": "1"
+  }
+]
