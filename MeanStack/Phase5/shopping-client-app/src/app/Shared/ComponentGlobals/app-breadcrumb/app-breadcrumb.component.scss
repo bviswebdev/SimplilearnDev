@@ -1,0 +1,40 @@
+.breadcrumb {
+  background: none;
+  font-size: 1.2em;
+
+  .breadcrumbitem {
+    margin-left: 5px;
+    margin-right: 25px;
+    position: relative;
+  }
+  a,
+  span {
+    color: rgb(119, 117, 117);
+  }
+  a:hover,
+  span:hover {
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  span.breadurl {
+    font-weight: 500;
+  }
+  mat-icon {
+    position: absolute;
+    top: -1px;
+  }
+  .breadcrumbitem:last-child mat-icon {
+    display: none;
+  }
+}
+
+.breadpagemargin {
+  margin-left: 20px;
+}
+
+/*
+.breadcrumb > .breadcrumbitem:last-child mat-icon {
+  background-color: green;
+  display: none;
+}*/

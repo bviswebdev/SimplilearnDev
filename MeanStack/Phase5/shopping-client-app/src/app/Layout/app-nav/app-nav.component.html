@@ -1,0 +1,93 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row
+    style="height: 75px"
+    fxLayout="row"
+    fxLayoutAlign="space-between center"
+  >
+    <div>
+      <button mat-button routerLink="/medicare/home">
+        <span class="logotxt">Medicare</span>
+      </button>
+      <button
+        mat-button
+        routerLink="/medicare/aboutus"
+        routerLinkActive="activelink"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        About
+      </button>
+      <button
+        mat-button
+        routerLink="/medicare/contactus"
+        routerLinkActive="activelink"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Contact
+      </button>
+      <button
+        mat-button
+        routerLink="/medicare/viewproducts"
+        routerLinkActive="activelink"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        View Products
+      </button>
+    </div>
+
+    <div>
+      <button
+        mat-button
+        *ngIf="!authService.IsAuthenticated"
+        routerLink="/medicare/register"
+        routerLinkActive="activelink"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Sign Up
+      </button>
+      <button
+        mat-button
+        *ngIf="!authService.IsAuthenticated"
+        routerLink="/medicare/signin"
+        routerLinkActive="activelink"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Login
+      </button>
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu"
+        *ngIf="authService.IsAuthenticated"
+        style="margin-right: 100px"
+      >
+        {{ authService.UserName }}
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button
+          mat-menu-item
+          *ngIf="authService.IsAuthenticated && authService.IsUser"
+          routerLink="/customer/cart"
+        >
+          <mat-icon
+            [matBadge]="medAppService.appUserCart?.cartItems?.length"
+            matBadgeColor="warn"
+          >
+            shopping_cart</mat-icon
+          >
+
+          <span
+            >-
+            {{
+              medAppService.appUserCart?.grandTotal | currency: "&#8377;"
+            }}</span
+          >
+        </button>
+        <button mat-menu-item (click)="appSignOut()">
+          <mat-icon style="font-size: large; margin-left: 5px">Logout</mat-icon>
+          <span>Logout</span>
+        </button>
+      </mat-menu>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

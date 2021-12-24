@@ -1,0 +1,45 @@
+<section>
+  <div
+    class="breadcrumb"
+    fxLayout="row"
+    fxLayoutAlign="start center"
+    [class]="{ breadpagemargin: singleColumn }"
+  >
+    <div class="breadcrumbitem" *ngFor="let breadcrumb of breadcrumbs">
+      <span
+        class="breadurl"
+        [routerLink]="breadcrumb.url"
+        routerLinkActive="router-link-active"
+      >
+        {{ breadcrumb.label }}
+        <mat-icon aria-hidden="false" aria-label="Example home icon"
+          >chevron_right</mat-icon
+        >
+      </span>
+    </div>
+  </div>
+</section>
+
+<!--
+<section>
+  <ol class="breadcrumb">
+    <li *ngFor="let breadcrumb of breadcrumbs">
+      <span
+        class="breadurl"
+        [routerLink]="breadcrumb.url"
+        routerLinkActive="router-link-active"
+      >
+        {{ breadcrumb.label }}
+      </span>
+    </li>
+  </ol>
+</section>
+-->
+
+<!--
+bgColor	Optional	To set background-color for Breadcrumb, default #eee
+fontSize	Optional	To set size of Breadcrumb, default 18px
+fontColor	Optional	To set color of Breadcrumb, default #0275d8
+lastLinkColor	Optional	To set color of last link Breadcrumb, default #000
+symbol	Optional	To set symbol of Breadcrumb, default /
+-->

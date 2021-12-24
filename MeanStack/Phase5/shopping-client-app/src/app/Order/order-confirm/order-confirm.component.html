@@ -1,0 +1,136 @@
+<section
+  class="ordercontainer"
+  [ngClass.lt-md]="{ ordercontainer: false }"
+  *ngIf="isDataLoaded"
+>
+  <section style="height: 100px; border: 1px solid blue">
+    <article>
+      <p>
+        <mat-toolbar
+          style="background-color: lavender; height: 100px"
+          fxLayout="row"
+          fxLayoutAlign="center center"
+        >
+          <span style="font-size: x-large; font-weight: 500"
+            >Your Order is Confirmed!!</span
+          >
+        </mat-toolbar>
+      </p>
+    </article>
+  </section>
+  <section style="height: 120px; border: 1px solid blue">
+    <article
+      style="height: 120px"
+      fxLayout="row"
+      fxLayoutAlign="space-between center"
+    >
+      <div>
+        <span style="font-size: x-large; font-weight: 500">Invoice</span>
+      </div>
+      <div>
+        <span style="font-size: x-large; font-weight: 500">Order # 1</span>
+      </div>
+    </article>
+  </section>
+  <section
+    style="height: 150px; border: 1px solid blue"
+    fxLayout="row"
+    fxLayoutAlign="space-between center"
+  >
+    <article style="font-size: large">
+      <span style="font-weight: 500">Billed To:</span><br />
+      <span style="font-weight: 300">{{ authService.UserName }}</span
+      ><br />
+      <span style="font-weight: 300">{{ billingAddress.addressLineOne }}</span
+      ><br />
+      <span style="font-weight: 300">{{ billingAddress.addressLineTwo }}</span
+      ><br />
+      <span style="font-weight: 300"
+        >{{ billingAddress.city }} - {{ billingAddress.postalCode }}</span
+      ><br />
+      <span style="font-weight: 300"
+        >{{ billingAddress.state }} - {{ billingAddress.country }}</span
+      ><br />
+    </article>
+    <article style="text-align: right; font-size: large">
+      <span style="font-weight: 500">Shipped To:</span><br />
+      <span style="font-weight: 300">{{ authService.UserName }}</span
+      ><br />
+      <span style="font-weight: 300">{{ shippingAddress.addressLineOne }}</span
+      ><br />
+      <span style="font-weight: 300">{{ shippingAddress.addressLineTwo }}</span
+      ><br />
+      <span style="font-weight: 300"
+        >{{ shippingAddress.city }} - {{ shippingAddress.postalCode }}</span
+      ><br />
+      <span style="font-weight: 300"
+        >{{ shippingAddress.state }} - {{ shippingAddress.country }}</span
+      ><br />
+    </article>
+  </section>
+  <section
+    style="height: 100px; border: 1px solid blue"
+    fxLayout="row"
+    fxLayoutAlign="space-between center"
+  >
+    <article style="font-size: large">
+      <span style="font-weight: 500">Patment Method:</span><br />
+      <span style="font-weight: 300">Card Payment</span><br />
+      <span style="font-weight: 300">{{ authService.Email }}</span
+      ><br />
+    </article>
+    <article style="text-align: right; font-size: large">
+      <span style="font-weight: 500">Order Date:</span><br />
+      <span style="font-weight: 300">{{ orderObj.orderDate }}</span
+      ><br />
+    </article>
+  </section>
+  <section
+    style="height: 50px; background-color: lavender; border: 1px solid blue"
+    fxLayout="row"
+    fxLayoutAlign="start center"
+  >
+    <article style="font-size: large">
+      <span style="font-weight: 500">Order Summary:</span><br />
+    </article>
+  </section>
+  <section style="border: 1px solid blue">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Totals</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let orderItem of orderObj.orderItems">
+          <th scope="row" style="text-align: left">
+            {{ orderItem.productName }}
+          </th>
+          <td>{{ orderItem.buyingPrice }}</td>
+          <td>{{ orderItem.productCount }}</td>
+          <td style="text-align: right">{{ orderItem.total }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section
+    style="height: 100px; border: 1px solid blue"
+    fxLayout="row"
+    fxLayoutAlign="center center"
+  >
+    <article>
+      <button
+        mat-raised-button
+        color="primary"
+        class="btnaddress"
+        routerLink="/medicare/viewproducts"
+      >
+        Continue Shopping
+      </button>
+    </article>
+  </section>
+</section>
