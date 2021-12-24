@@ -1,0 +1,35 @@
+{
+    "firstName": "Balaji",
+    "lastName": "Visvanathan",
+    "role": "ADMIN",
+    "enabled": true,
+    "password": "balaji",
+    "email": "bvis@gmail.com",
+    "contactNumber": 7777777777,
+    "addresses": [
+      {
+        "addressLineOne": "102 Sabarmati Society, Mahatma Gandhi Road",
+        "addressLineTwo": "Near Salt Lake, Gandhi Nagar",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "country": "India",
+        "postalCode": 111111,
+        "isBilling": true,
+        "isShipping": false
+      }
+    ]
+  }
+
+ADMIN
+  {
+    "email":"bvis@gmail.com",
+    "password":"balaji"
+  }
+
+USER
+   {
+    "email":"bv@gmail.com",
+    "password":"balaji"
+  }
+
+  {"test":"test data"}
